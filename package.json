@@ -1,5 +1,5 @@
 {
-    "name": "modals-js",
+    "name": "modal-popups-js",
     "version": "0.9.0",
     "description": "Plugin for creating modals and popups",
     "main": "modals.js",
