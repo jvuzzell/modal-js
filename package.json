@@ -1,0 +1,34 @@
+{
+    "name": "modals-js",
+    "version": "0.9.0",
+    "description": "Plugin for creating modals and popups",
+    "main": "modals.js",
+    "scripts": {
+        "test": "jest",
+        "test-watch": "jest --watch"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/jvuzzell/modal-js.git"
+    },
+    "keywords": [
+        "dropdown",
+        "collapse",
+        "expand"
+    ],
+    "author": "Joshua Uzzell <josh.uzzell@gmail.com> (https://uzzell.cc)",
+    "license": "SEE LICENSE IN license.txt",
+    "bugs": {
+        "url": "https://github.com/jvuzzell/modal-js/issues"
+    },
+    "homepage": "https://github.com/jvuzzell/modal-js#readme",
+    "devDependencies": {
+        "@babel/plugin-transform-modules-commonjs": "^7.20.7",
+        "@testing-library/dom": "^8.17.1",
+        "@testing-library/jest-dom": "^5.16.5",
+        "@testing-library/user-event": "^14.4.3",
+        "jest": "^28.1.3",
+        "jest-cli": "^29.3.1",
+        "jest-environment-jsdom": "^29.0.1"
+    }
+}

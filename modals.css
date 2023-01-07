@@ -1,0 +1,37 @@
+.modal-containers {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    transform: translateY(0%);
+}
+
+.modal-container {
+    transition: all 225ms ease-in-out;
+}
+
+body:not([data-modal="active"]) .modal-containers {
+    transform: translateY(-100%);
+}
+
+.modal-container[data-modal-target] {
+    width: 600px; 
+    position: fixed; 
+    top: 30px;
+    left: calc(50% - 300px);
+}
+
+.modal-container[data-modal-target][data-modal-container="hidden"] {
+    top: -1000px;
+}
+
+.modal-container .v-col {
+    margin-bottom: 12px;
+}
+
+.modal-container label + input[disabled] {
+    padding-top: 0; 
+    padding-bottom: 0;
+}
