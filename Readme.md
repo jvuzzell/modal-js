@@ -12,12 +12,12 @@ Plugin for creating modals and popups.
     - [Custom Trigger Events](#trigger-events)
     - [Custom Callbacks](#)
 - [Public Methods](#public-methods) 
-    - Expandables - Class
+    - Modals - Class
         - .getModal()
         - .getModals() 
         - .registerModal()
         - .addCloseModalEvents()
-    - Expandable - Instance 
+    - Modal - Instance 
         - .toggle()
         - .isVisible()
     - InitModals()
@@ -208,11 +208,11 @@ The default event for triggering modal visibility can be overwritten by adding [
 |Object|Method|Description|
 |---|---|---|
 ||initModals()|Initializes modals in the document by calling the Expandables.registerModal() for every modal within the .modal-containers HTML element.|
-|Expandables|.getModal( name )| Expected string to equal value of [data-modal-target] attribute on modal HTML element. Returns single HTML element for corresponding modal. |
+|Modals|.getModal( name )| Expected string to equal value of [data-modal-target] attribute on modal HTML element. Returns single HTML element for corresponding modal. |
 ||.getModals()| Returns HTMLCollection of all modals. |
 ||.registerModal( HTMLElement )| Expected HTML element; Takes an HTML element representing the modal. The attributes are read from the modal element and used to build a modal instance. |
 ||.addCloseModalEvents()| Used when modals are registered outside of the initModals() method to attach eventlisteners to the window that detect whether the modal parent container or a corresponding close button has been clicked. |
-|Expandable|.toggle()|Swaps the modal between 'visible' and 'hidden' states.|
+|Modal|.toggle()|Swaps the modal between 'visible' and 'hidden' states.|
 ||.isVisible()|Returns boolean of true or false representing whether the modal is visible.|
 
 
