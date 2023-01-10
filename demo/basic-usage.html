@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup Test</title>
+    <link rel="stylesheet" href="/modals-js/modals.css">
+</head>
+<body>
+    <h2>Modal Plugin</h2>
+    <div >
+        <p>Click this icon to trigger a modal --> 
+            <button data-modal-trigger data-modal-target="example-modal">
+                Trigger 1 - click
+            </button>
+            <button data-modal-trigger="mouseover" data-modal-target="example-modal">
+                Trigger 2 - mouseover
+            </button>
+        </p>
+        <p>The modal container has two states: "visible" and "hidden"</p>
+        <p><strong>Note:</strong> Ocassionally, Popups will be triggered on form submit. Clicking buttons, images, video, and anchor tags can also trigger popups if [data-modal-target] and [data-modal-trigger] are added to the tag.
+    </div>
+
+    <div class="modal-containers">
+        <div class="modal-container" data-modal-container="hidden" data-modal-target="example-modal">
+            <div style="background-color: #ffffa0">
+                <h1 data-modal-header>Example Modal 1</h1>
+                <hr>
+                <p>Content goes here</p>
+                <button  type="button" data-pressed="false" data-close-modal="example-modal">Okay</button>
+            </div>
+        </div>
+    </div>
+    <script type="module">
+        import { Modals, initModals } from '/modals-js/modals.js'; 
+        initModals();
+    </script>
+</body> 
+</html>

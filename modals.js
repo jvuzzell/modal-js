@@ -155,7 +155,7 @@ export let Modals = (function() {
 
     }
 
-    const registerModal = function( modal, iterator ) {
+    let registerModal = function( modal ) {
 
         let modalTarget          = modal;
         let modalName            = modalTarget.getAttribute( 'data-modal-target' );
