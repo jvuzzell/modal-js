@@ -1,6 +1,6 @@
 {
     "name": "modal-popups-js",
-    "version": "0.10.0",
+    "version": "0.10.1",
     "description": "Plugin for creating modals and popups",
     "main": "modals.js",
     "scripts": {
